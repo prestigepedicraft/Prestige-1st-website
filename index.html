@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prestige Pedicraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <img src="assets/logo.png" alt="Prestige Pedicraft Logo" class="logo-nav"/>
+    <ul>
+      <li><a href="#prestige">Prestige</a></li>
+      <li><a href="#pedicraft">Pedicraft</a></li>
+      <li><a href="#essentials">Essentials</a></li>
+      <li><a href="#contact">Contact / Buy</a></li>
+    </ul>
+  </nav>
+  <header class="hero-section">
+    <img src="assets/logo.png" alt="Prestige Pedicraft Logo" class="logo-main"/>
+    <h1>Prestige Pedicraft</h1>
+    <p class="slogan">Elevating elegance, one step at a time.</p>
+    <p class="tagline">Handmade leather footwear & essentials for men and women</p>
+  </header>
+
+  <section id="prestige" class="section">
+    <h2>Prestige</h2>
+    <p>Discover our finest handmade leather footwear and essentials. Browse our highlights below.</p>
+    <div class="product-grid" id="prestige-products">
+      <div class="product-card">
+        <img src="assets/sample-shoe.jpg" alt="Sample Shoe"/>
+        <h3>Classic Oxford Shoe</h3>
+        <p>Elegant handmade leather shoes for every occasion.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/sample-belt.jpg" alt="Sample Belt"/>
+        <h3>Signature Leather Belt</h3>
+        <p>Premium leather belt, crafted for style and durability.</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedicraft" class="section">
+    <h2>Pedicraft Footwear</h2>
+    <div class="filters">
+      <button onclick="filterFootwear('all')">All</button>
+      <button onclick="filterFootwear('male')">Male</button>
+      <button onclick="filterFootwear('female')">Female</button>
+    </div>
+    <div class="product-grid" id="pedicraft-products">
+      <div class="product-card" data-gender="male">
+        <img src="assets/sample-male-shoe.jpg" alt="Men's Shoe"/>
+        <h3>Men's Loafer</h3>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card" data-gender="female">
+        <img src="assets/sample-female-shoe.jpg" alt="Women's Shoe"/>
+        <h3>Women's Sandal</h3>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="essentials" class="section">
+    <h2>Essentials</h2>
+    <div class="filters">
+      <button onclick="filterEssentials('all')">All</button>
+      <button onclick="filterEssentials('wallet')">Wallets</button>
+      <button onclick="filterEssentials('belt')">Belts</button>
+      <button onclick="filterEssentials('watch')">Watch Roll Box</button>
+    </div>
+    <div class="product-grid" id="essentials-products">
+      <div class="product-card" data-type="wallet">
+        <img src="assets/sample-wallet.jpg" alt="Wallet"/>
+        <h3>Leather Wallet</h3>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card" data-type="belt">
+        <img src="assets/sample-belt.jpg" alt="Belt"/>
+        <h3>Classic Belt</h3>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card" data-type="watch">
+        <img src="assets/sample-watchbox.jpg" alt="Watch Roll Box"/>
+        <h3>Travel Watch Roll Box</h3>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact & Buy</h2>
+    <p>Ready to elevate your elegance? Contact us to order or inquire about our products.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="footer-note">&#169; 2025 Prestige Pedicraft</p>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
